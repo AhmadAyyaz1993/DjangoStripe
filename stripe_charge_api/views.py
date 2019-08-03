@@ -18,6 +18,11 @@ def charge(request):
             token = request.data.get('token')
             description = request.data.get('description')
 
+
+            # convert amount var above into integer,
+            # multiply by 100, then make it a string again
+            # Stripe servers expects the amount param to be a string
+            # Multiplying it to 100 because with usd currency it takes amount in cents so we needed to convert it to dollars
             charge = stripe.Charge.create(
                 amount=str(int(amount*100)),
                 currency=currency,
