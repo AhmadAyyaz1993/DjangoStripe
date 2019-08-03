@@ -24,8 +24,8 @@ SECRET_KEY = 'd)u0=^bb1&qtzd^5la9n7jx7w8_8it271-)n9ce6&4hdj2l#-f'
 
 
 # STRIPE KEYS
-STRIPE_SECRET_KEY = ''
-STRIPE_PUBLISHABLE_KEY = ''
+STRIPE_SECRET_KEY = 'sk_test_xhNYplX5jBQoXAvoopOqbVyT'
+STRIPE_PUBLISHABLE_KEY = 'pk_test_BN2nWPaUDDAom30enXyWZtB5'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
