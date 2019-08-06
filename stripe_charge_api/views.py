@@ -24,7 +24,10 @@ def charge(request):
             # Stripe servers expects the amount param to be a string
             # Multiplying it to 100 because with usd currency it takes amount in cents so we needed to convert it to dollars
             charge = stripe.Charge.create(
-                amount=str(int(amount*100)),
+               #accepting amount as cents
+               #amount=str(int(amount*100)),
+               #accepting amount as cents
+                amount=amount,
                 currency=currency,
                 description=description,
                 source=token
